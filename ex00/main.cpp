@@ -5,5 +5,17 @@ int main() {
     claptrap.attack("Eustaquio");
     claptrap.takeDamage(5);
     claptrap.beRepaired(3);
+    claptrap.attack("Eustaquio");
+    claptrap.takeDamage(5);
+    claptrap.beRepaired(3);
+    claptrap.attack("Eustaquio");
+    claptrap.takeDamage(5);
+    claptrap.beRepaired(3);
+    claptrap.attack("Eustaquio");
+    claptrap.takeDamage(5);
+    claptrap.beRepaired(3);
+    claptrap.attack("Eustaquio");
+    claptrap.takeDamage(5);
+    claptrap.beRepaired(3);
     return 0;
 }
