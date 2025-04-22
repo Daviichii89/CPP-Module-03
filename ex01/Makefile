@@ -1,11 +1,11 @@
 #Config
 CC = c++
-NAME = ClapTrap
+NAME = ScavTrap
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 DFLAGS = -fsanitize=address
 
 # Directory
-SRC = main.cpp ClapTrap.cpp
+SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
