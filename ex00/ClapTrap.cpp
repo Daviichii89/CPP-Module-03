@@ -1,15 +1,11 @@
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap() {
+ClapTrap::ClapTrap() : name("Default"), hp(10), pp(10), damage(0) {
     std::cout << YELLOW << "Default constructor called for ClapTrap" << RESET << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name) {
+ClapTrap::ClapTrap(std::string name) : name(name), hp(10), pp(10), damage(0) {
     std::cout << YELLOW << "Constructor called for ClapTrap " << name << RESET << std::endl;
-    this->name = name;
-    this->hp = 10;
-    this->pp = 10;
-    this->damage = 0;
 }
 
 ClapTrap::~ClapTrap() {
