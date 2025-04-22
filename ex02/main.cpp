@@ -1,4 +1,5 @@
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main() {
     ClapTrap claptrap("Bonifacio");
@@ -6,35 +7,32 @@ int main() {
     ScavTrap scavtrap("Eustaquio");
     std::cout << "Se crea clase scavtrap" << std::endl;
 
-    ClapTrap claptrap2(claptrap);
-    std::cout << "Se copia clase claptrap" << std::endl;
     ScavTrap scavtrap2(scavtrap);
-    std::cout << "Se copia clase claptrap" << std::endl;
+    std::cout << "Se copia clase scavtrap" << std::endl;
 
-    ClapTrap claptrap3;
     ScavTrap scavtrap3;
-
-    claptrap3 = claptrap;
-    std::cout << "Se asigna clase claptrap" << std::endl;
     scavtrap3 = scavtrap;
     std::cout << "Se asigna clase scavtrap" << std::endl;
 
-    claptrap.attack("Eustaquio");
-    claptrap.takeDamage(5);
-    claptrap.beRepaired(3);
-    scavtrap.attack("Bonifacio");
-    scavtrap.takeDamage(5);
-    scavtrap.beRepaired(3);
-    scavtrap.guardGate();
-    claptrap.attack("Eustaquio");
-    claptrap.takeDamage(5);
-    claptrap.beRepaired(3);
-    claptrap.attack("Eustaquio");
-    claptrap.takeDamage(5);
-    claptrap.beRepaired(3);
-    claptrap.attack("Eustaquio");
-    claptrap.takeDamage(5);
-    claptrap.beRepaired(3);
+    std::cout << "\n==============================\n" << std::endl;
+    FragTrap fragtrap("Rigoberto");
+    std::cout << "Se crea clase fragtrap" << std::endl;
 
+    FragTrap fragtrap2(fragtrap);
+    std::cout << "Se copia clase fragtrap" << std::endl;
+
+    FragTrap fragtrap3;
+    fragtrap3 = fragtrap;
+    std::cout << "Se asigna clase fragtrap" << std::endl;
+
+    std::cout << "\n==============================\n" << std::endl;
+
+    claptrap.attack("Eustaquio");
+    scavtrap2.attack("Bonifacio");
+    fragtrap2.attack("Rigoberto");
+    fragtrap2.takeDamage(5);
+    fragtrap2.takeDamage(96);
+    fragtrap2.highFivesGuys();
+    
     return 0;
 }
